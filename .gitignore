@@ -3,3 +3,8 @@ node_modules
 
 # mac
 DS_Store
+
+# clasp
+.clasp.json
+creds.json
+.clasprc.json
