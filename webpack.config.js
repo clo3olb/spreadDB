@@ -1,7 +1,7 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./src/main.ts",
+  entry: ["./src/main.ts"],
   mode: "development",
   module: {
     rules: [
@@ -12,8 +12,12 @@ module.exports = {
       },
     ],
   },
+
   output: {
     path: path.resolve(__dirname, "dist"),
+    filename: "[name].js",
+    sourceMapFilename: "[name].js.map",
+    iife: false,
   },
   devtool: "nosources-source-map",
 };
